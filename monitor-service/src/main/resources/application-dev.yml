@@ -1,7 +1,16 @@
 spring:
   application:
-    name: test
-test:
-  age: "hello"
-server:
-  port: 8080
+    name: service-service-1
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/monitor
+mybatis-plus:
+  mapper-locations: classpath*:mybatis/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+common:
+  jwt:
+    bootstrap: true
+  oshi:
+    bootstrap: true
