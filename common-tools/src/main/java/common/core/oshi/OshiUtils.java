@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Properties;
 
 @Slf4j
-public class OshiUtil {
+public class OshiUtils {
     private final SystemInfo systemInfo = new SystemInfo();
 
     private final Properties properties = System.getProperties();

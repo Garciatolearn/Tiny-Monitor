@@ -3,13 +3,14 @@ package org.garcia.monitor.server.entity.po;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @TableName("t_user_detail")
-@Builder
-public class UserDetailPO extends BasePO{
+@NoArgsConstructor
+public class UserPO extends BasePO{
 
     String userName;
 
@@ -17,6 +18,10 @@ public class UserDetailPO extends BasePO{
 
     String password;
 
+    String email;
+
     String userRole;
+
+    LocalDateTime registerTime;
 
 }

@@ -17,6 +17,5 @@ public class ServerApplication {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(ServerApplication.class, args);
-        System.out.println(run.getBean("oshiUtil"));
     }
 }

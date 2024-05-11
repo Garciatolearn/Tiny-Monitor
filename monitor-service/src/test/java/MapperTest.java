@@ -1,12 +1,12 @@
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import common.core.jwt.JWTutils;
-import common.core.oshi.OshiUtil;
+import common.core.oshi.OshiUtils;
 import common.core.oshi.entity.ComputerDetail;
 import jakarta.annotation.Resource;
 import org.garcia.monitor.server.ServerApplication;
-import org.garcia.monitor.server.dao.UserDetailMapper;
-import org.garcia.monitor.server.entity.po.UserDetailPO;
+import org.garcia.monitor.server.dao.UserMapper;
+import org.garcia.monitor.server.entity.po.UserPO;
+import org.garcia.monitor.server.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -15,26 +15,20 @@ import oshi.hardware.CentralProcessor;
 import oshi.hardware.HardwareAbstractionLayer;
 import oshi.software.os.OperatingSystem;
 
-import java.sql.Wrapper;
 import java.util.Properties;
 
 @SpringBootTest(classes = {ServerApplication.class})
 public class MapperTest {
 
     @Resource
-    UserDetailMapper userDetailMapper;
+    UserService userService;
 
     @Resource
     BCryptPasswordEncoder encoder;
 
     @Test
     public void test(){
-        int insert = userDetailMapper.insert(UserDetailPO.builder()
-                        .userName("roots")
-                        .alisa("小陈s")
-                        .password(encoder.encode("123456"))
-                        .userRole("admin")
-                .build());
+        System.out.println(userService.findUserByUsernameOrEmail("root"));
 
     }
 
@@ -46,8 +40,8 @@ public class MapperTest {
         Properties properties = System.getProperties();
         OperatingSystem operatingSystem = info.getOperatingSystem();
 //        properties.entrySet().forEach(ecah -> System.out.println(ecah));
-        OshiUtil oshiUtil = new OshiUtil();
-        ComputerDetail computerDetail = oshiUtil.getComputerDetail();
+        OshiUtils oshiUtils = new OshiUtils();
+        ComputerDetail computerDetail = oshiUtils.getComputerDetail();
         System.out.println(computerDetail);
 
     }
@@ -55,10 +49,10 @@ public class MapperTest {
     @Resource
     JWTutils jwTutils;
     @Resource
-    OshiUtil oshiUtil;
+    OshiUtils oshiUtils;
     @Test
     public void token(){
-        ComputerDetail computerDetail = oshiUtil.getComputerDetail();
+        ComputerDetail computerDetail = oshiUtils.getComputerDetail();
         String token = jwTutils.createToken(computerDetail);
         System.out.println(token);
         System.out.println(jwTutils.toObject(token,new ComputerDetail()));

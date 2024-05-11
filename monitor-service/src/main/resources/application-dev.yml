@@ -14,4 +14,6 @@ common:
     bootstrap: true
   oshi:
     bootstrap: true
+  json:
+    bootstrap: true
 register-token: fhjaskhfgasgasgaghhf

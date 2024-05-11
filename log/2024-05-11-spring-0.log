@@ -1,0 +1,869 @@
+2024-05-11 18:51:54.340  INFO 3960 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 3960 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 18:51:54.342  INFO 3960 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 18:51:54.999  INFO 3960 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 18:51:55.003  INFO 3960 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 18:51:55.044  INFO 3960 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2024-05-11 18:51:55.719  INFO 3960 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 18:51:55.729  INFO 3960 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 18:51:55.729  INFO 3960 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 18:51:55.818  INFO 3960 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 18:51:55.819  INFO 3960 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1435 ms
+2024-05-11 18:51:56.283  INFO 3960 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 18:51:56.543  INFO 3960 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6253e59a
+2024-05-11 18:51:56.545  INFO 3960 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 18:51:56.774  INFO 3960 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@304068, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54d60fa1, org.springframework.security.web.context.SecurityContextHolderFilter@77204651, org.springframework.security.web.header.HeaderWriterFilter@70439c3, org.springframework.security.web.authentication.logout.LogoutFilter@526893f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70592729, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@58f50dd0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1cb849b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a9c11fb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a205ee5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fe2a366, org.springframework.security.web.access.ExceptionTranslationFilter@92fd091, org.springframework.security.web.access.intercept.AuthorizationFilter@6fa2a006]
+2024-05-11 18:51:57.030  INFO 3960 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:2, dataCenterId:2
+2024-05-11 18:51:57.501  INFO 3960 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 18:51:57.514  INFO 3960 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.584 seconds (process running for 4.053)
+2024-05-11 18:52:08.955  INFO 3960 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 18:52:08.959  INFO 3960 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 18:52:25.164  INFO 25164 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 25164 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 18:52:25.166  INFO 25164 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 18:52:25.806  INFO 25164 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 18:52:25.810  INFO 25164 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 18:52:25.856  INFO 25164 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2024-05-11 18:52:26.646  INFO 25164 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 18:52:26.660  INFO 25164 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 18:52:26.660  INFO 25164 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 18:52:26.802  INFO 25164 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 18:52:26.802  INFO 25164 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1598 ms
+2024-05-11 18:52:27.279  INFO 25164 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 18:52:27.631  INFO 25164 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e8d9bb6
+2024-05-11 18:52:27.643  INFO 25164 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 18:52:27.869  WARN 25164 --- [main] (system) ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'filterChain' defined in class path resource [org/garcia/monitor/server/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: current thread is not owner
+2024-05-11 18:52:27.870  INFO 25164 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 18:52:27.878  INFO 25164 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 18:52:27.881  INFO 25164 --- [main] (system) o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-11 18:52:27.893  INFO 25164 --- [main] (system) .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-11 18:52:27.912 ERROR 25164 --- [main] (system) o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'filterChain' defined in class path resource [org/garcia/monitor/server/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: current thread is not owner
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:647)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1330)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:558)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.garcia.monitor.server.ServerApplication.main(ServerApplication.java:19)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: current thread is not owner
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:643)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalMonitorStateException: current thread is not owner
+	at java.base/java.lang.Object.notifyAll(Native Method)
+	at org.garcia.monitor.server.config.SecurityConfig.lambda$filterChain$2(SecurityConfig.java:49)
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.formLogin(HttpSecurity.java:2194)
+	at org.garcia.monitor.server.config.SecurityConfig.filterChain(SecurityConfig.java:49)
+	at org.garcia.monitor.server.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$filterChain$0(<generated>)
+	at org.garcia.monitor.server.config.SecurityConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.garcia.monitor.server.config.SecurityConfig$$SpringCGLIB$$0.filterChain(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 20 common frames omitted
+
+2024-05-11 18:59:13.193  INFO 8500 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 8500 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 18:59:13.195  INFO 8500 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 18:59:13.838  INFO 8500 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 18:59:13.841  INFO 8500 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 18:59:13.873  INFO 8500 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-05-11 18:59:14.367  INFO 8500 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 18:59:14.375  INFO 8500 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 18:59:14.375  INFO 8500 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 18:59:14.453  INFO 8500 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 18:59:14.454  INFO 8500 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1219 ms
+2024-05-11 18:59:14.936  INFO 8500 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 18:59:15.253  INFO 8500 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c1c9881
+2024-05-11 18:59:15.258  INFO 8500 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 18:59:15.518  INFO 8500 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3593e074, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79d14037, org.springframework.security.web.context.SecurityContextHolderFilter@43b172e3, org.springframework.security.web.header.HeaderWriterFilter@6fa2a006, org.springframework.security.web.authentication.logout.LogoutFilter@13b29b34, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c206b14, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@34eaf9c1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c1e40d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@304068, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6dd38df2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b50c21, org.springframework.security.web.access.ExceptionTranslationFilter@70f5f59d, org.springframework.security.web.access.intercept.AuthorizationFilter@68df8c6]
+2024-05-11 18:59:15.802  INFO 8500 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:14, dataCenterId:31
+2024-05-11 18:59:16.356  INFO 8500 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 18:59:16.365  INFO 8500 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.698 seconds (process running for 5.15)
+2024-05-11 19:02:22.836  INFO 8500 --- [http-nio-8080-exec-3] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-11 19:02:22.837  INFO 8500 --- [http-nio-8080-exec-3] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-11 19:02:22.838  INFO 8500 --- [http-nio-8080-exec-3] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-11 19:03:13.274  INFO 8500 --- [http-nio-8080-exec-1] (system) o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: The HTTP header line [username=root&password=123456: ] does not conform to RFC 7230. The request has been rejected.
+	at org.apache.coyote.http11.Http11InputBuffer.skipLine(Http11InputBuffer.java:1080)
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeader(Http11InputBuffer.java:911)
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeaders(Http11InputBuffer.java:591)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:287)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2024-05-11 19:04:46.943  INFO 8500 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 19:04:46.951  INFO 8500 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 21:37:52.383  INFO 20676 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 20676 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 21:37:52.385  INFO 20676 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 21:37:53.530  INFO 20676 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 21:37:53.533  INFO 20676 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 21:37:53.584  INFO 20676 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+2024-05-11 21:37:54.340  INFO 20676 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 21:37:54.351  INFO 20676 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 21:37:54.351  INFO 20676 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 21:37:54.456  INFO 20676 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 21:37:54.456  INFO 20676 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2031 ms
+2024-05-11 21:37:54.571  WARN 20676 --- [main] (system) ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of resource dependencies failed
+2024-05-11 21:37:54.573  INFO 20676 --- [main] (system) o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-11 21:37:54.589  INFO 20676 --- [main] (system) .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-11 21:37:54.606 ERROR 20676 --- [main] (system) o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  securityConfig
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-05-11 21:39:47.947  INFO 23204 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 23204 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 21:39:47.949  INFO 23204 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 21:39:48.624  INFO 23204 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 21:39:48.627  INFO 23204 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 21:39:48.667  INFO 23204 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2024-05-11 21:39:49.331  INFO 23204 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 21:39:49.346  INFO 23204 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 21:39:49.347  INFO 23204 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 21:39:49.488  INFO 23204 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 21:39:49.489  INFO 23204 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1503 ms
+2024-05-11 21:39:49.630  WARN 23204 --- [main] (system) ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of resource dependencies failed
+2024-05-11 21:39:49.635  INFO 23204 --- [main] (system) o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-11 21:39:49.648  INFO 23204 --- [main] (system) .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-11 21:39:49.668 ERROR 23204 --- [main] (system) o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  securityConfig
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-05-11 21:41:51.104  INFO 13456 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 13456 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 21:41:51.106  INFO 13456 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 21:41:51.737  INFO 13456 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 21:41:51.741  INFO 13456 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 21:41:51.772  INFO 13456 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-05-11 21:41:52.374  INFO 13456 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 21:41:52.387  INFO 13456 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 21:41:52.387  INFO 13456 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 21:41:52.502  INFO 13456 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 21:41:52.503  INFO 13456 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1354 ms
+2024-05-11 21:41:52.624  WARN 13456 --- [main] (system) ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of resource dependencies failed
+2024-05-11 21:41:52.629  INFO 13456 --- [main] (system) o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-11 21:41:52.642  INFO 13456 --- [main] (system) .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-11 21:41:52.655 ERROR 13456 --- [main] (system) o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  securityConfig
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-05-11 21:43:25.062  INFO 13352 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 13352 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 21:43:25.064  INFO 13352 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 21:43:25.799  INFO 13352 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 21:43:25.805  INFO 13352 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 21:43:25.847  INFO 13352 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2024-05-11 21:43:26.621  INFO 13352 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 21:43:26.636  INFO 13352 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 21:43:26.637  INFO 13352 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 21:43:26.770  INFO 13352 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 21:43:26.771  INFO 13352 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1668 ms
+2024-05-11 21:43:26.874  WARN 13352 --- [main] (system) ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of resource dependencies failed
+2024-05-11 21:43:26.876  INFO 13352 --- [main] (system) o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-11 21:43:26.889  INFO 13352 --- [main] (system) .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-11 21:43:26.902 ERROR 13352 --- [main] (system) o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  securityConfig
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-05-11 21:44:41.747  INFO 16340 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 16340 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 21:44:41.749  INFO 16340 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 21:44:42.365  INFO 16340 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 21:44:42.367  INFO 16340 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 21:44:42.414  INFO 16340 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2024-05-11 21:44:43.160  INFO 16340 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 21:44:43.173  INFO 16340 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 21:44:43.174  INFO 16340 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 21:44:43.290  INFO 16340 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 21:44:43.291  INFO 16340 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1501 ms
+2024-05-11 21:44:43.408  WARN 16340 --- [main] (system) ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of resource dependencies failed
+2024-05-11 21:44:43.415  INFO 16340 --- [main] (system) o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-11 21:44:43.430  INFO 16340 --- [main] (system) .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-11 21:44:43.445 ERROR 16340 --- [main] (system) o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  securityConfig
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-05-11 21:46:09.198  INFO 16684 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 16684 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 21:46:09.200  INFO 16684 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 21:46:09.878  INFO 16684 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 21:46:09.882  INFO 16684 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 21:46:09.925  INFO 16684 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2024-05-11 21:46:10.641  INFO 16684 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 21:46:10.650  INFO 16684 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 21:46:10.651  INFO 16684 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 21:46:10.781  INFO 16684 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 21:46:10.783  INFO 16684 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1543 ms
+2024-05-11 21:46:11.290  INFO 16684 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 21:46:11.641  INFO 16684 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c2096c6
+2024-05-11 21:46:11.649  INFO 16684 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 21:46:11.888  INFO 16684 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6106dfb6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14239223, org.springframework.security.web.context.SecurityContextHolderFilter@5599dc60, org.springframework.security.web.header.HeaderWriterFilter@37caecda, org.springframework.security.web.authentication.logout.LogoutFilter@70169464, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bb172dd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1cb849b2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@68df8c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70f5f59d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fdf7da2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c206b14, org.springframework.security.web.access.ExceptionTranslationFilter@526893f, org.springframework.security.web.access.intercept.AuthorizationFilter@46994f26]
+2024-05-11 21:46:12.156  INFO 16684 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:12, dataCenterId:28
+2024-05-11 21:46:12.642  INFO 16684 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 21:46:12.653  INFO 16684 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.855 seconds (process running for 4.281)
+2024-05-11 21:46:18.768  INFO 16684 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 21:46:18.790  INFO 16684 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 21:46:50.369  INFO 14888 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 14888 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 21:46:50.370  INFO 14888 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 21:46:51.135  INFO 14888 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 21:46:51.139  INFO 14888 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 21:46:51.176  INFO 14888 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-05-11 21:46:52.021  INFO 14888 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 21:46:52.034  INFO 14888 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 21:46:52.034  INFO 14888 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 21:46:52.181  INFO 14888 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 21:46:52.182  INFO 14888 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1769 ms
+2024-05-11 21:46:52.326  WARN 14888 --- [main] (system) ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of resource dependencies failed
+2024-05-11 21:46:52.328  INFO 14888 --- [main] (system) o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-11 21:46:52.345  INFO 14888 --- [main] (system) .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-11 21:46:52.359 ERROR 14888 --- [main] (system) o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  securityConfig
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-05-11 21:51:33.605  INFO 13868 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 13868 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 21:51:33.607  INFO 13868 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 21:51:34.348  INFO 13868 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 21:51:34.350  INFO 13868 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 21:51:34.375  INFO 13868 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-05-11 21:51:35.093  INFO 13868 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 21:51:35.105  INFO 13868 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 21:51:35.106  INFO 13868 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 21:51:35.205  INFO 13868 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 21:51:35.207  INFO 13868 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1557 ms
+2024-05-11 21:51:35.722  INFO 13868 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 21:51:36.018  INFO 13868 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cf10c92
+2024-05-11 21:51:36.020  INFO 13868 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 21:51:36.236  INFO 13868 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69f69078, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13b29b34, org.springframework.security.web.context.SecurityContextHolderFilter@5e7cd0df, org.springframework.security.web.header.HeaderWriterFilter@2d0f548a, org.springframework.security.web.authentication.logout.LogoutFilter@248b2b61, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64ed18ec, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@74431832, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@25589735, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8b89b3a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7be7c052, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46994f26, org.springframework.security.web.access.ExceptionTranslationFilter@552bee2f, org.springframework.security.web.access.intercept.AuthorizationFilter@1115be8c]
+2024-05-11 21:51:36.527  INFO 13868 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:2, dataCenterId:29
+2024-05-11 21:51:37.018  INFO 13868 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 21:51:37.025  INFO 13868 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.842 seconds (process running for 4.273)
+2024-05-11 21:51:45.976  INFO 13868 --- [http-nio-8080-exec-1] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-11 21:51:45.976  INFO 13868 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-11 21:51:45.977  INFO 13868 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-11 21:51:53.624 ERROR 13868 --- [http-nio-8080-exec-1] (system) w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Error attempting to get column 'user_role' from result set.  Cause: java.sql.SQLDataException: Cannot convert string 'admin' to java.time.LocalDateTime value
+; Cannot convert string 'admin' to java.time.LocalDateTime value
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:118)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.springframework.dao.DataIntegrityViolationException: Error attempting to get column 'user_role' from result set.  Cause: java.sql.SQLDataException: Cannot convert string 'admin' to java.time.LocalDateTime value
+; Cannot convert string 'admin' to java.time.LocalDateTime value
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:91)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:82)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy72.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:164)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:152)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectList(Unknown Source)
+	at com.baomidou.mybatisplus.core.mapper.BaseMapper.selectOne(BaseMapper.java:222)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$DefaultMethodInvoker.invoke(MybatisMapperProxy.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectOne(Unknown Source)
+	at com.baomidou.mybatisplus.core.mapper.BaseMapper.selectOne(BaseMapper.java:211)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$DefaultMethodInvoker.invoke(MybatisMapperProxy.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectOne(Unknown Source)
+	at org.garcia.monitor.server.config.SecurityConfig.lambda$userDetailsService$0(SecurityConfig.java:53)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:103)
+	... 62 common frames omitted
+Caused by: java.sql.SQLDataException: Cannot convert string 'admin' to java.time.LocalDateTime value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:114)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1431)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1436)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getObject(HikariProxyResultSet.java)
+	at org.apache.ibatis.type.LocalDateTimeTypeHandler.getNullableResult(LocalDateTimeTypeHandler.java:39)
+	at org.apache.ibatis.type.LocalDateTimeTypeHandler.getNullableResult(LocalDateTimeTypeHandler.java:29)
+	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:86)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyColumnOrderBasedConstructorAutomapping(DefaultResultSetHandler.java:789)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyConstructorAutomapping(DefaultResultSetHandler.java:776)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:727)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:689)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:659)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:411)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 81 common frames omitted
+Caused by: com.mysql.cj.exceptions.DataConversionException: Cannot convert string 'admin' to java.time.LocalDateTime value
+	at com.mysql.cj.result.AbstractDateTimeValueFactory.createFromBytes(AbstractDateTimeValueFactory.java:139)
+	at com.mysql.cj.protocol.a.MysqlTextValueDecoder.decodeByteArray(MysqlTextValueDecoder.java:143)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.decodeAndCreateReturnValue(AbstractResultsetRow.java:135)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.getValueFromBytes(AbstractResultsetRow.java:243)
+	at com.mysql.cj.protocol.a.result.ByteArrayRow.getValue(ByteArrayRow.java:91)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getLocalDateTime(ResultSetImpl.java:959)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1391)
+	... 111 common frames omitted
+
+2024-05-11 21:53:15.104  INFO 13868 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 21:53:15.116  INFO 13868 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 21:53:18.127  INFO 24616 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 24616 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 21:53:18.129  INFO 24616 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 21:53:19.038  INFO 24616 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 21:53:19.045  INFO 24616 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 21:53:19.114  INFO 24616 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+2024-05-11 21:53:20.314  INFO 24616 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 21:53:20.335  INFO 24616 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 21:53:20.336  INFO 24616 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 21:53:20.493  INFO 24616 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 21:53:20.494  INFO 24616 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2324 ms
+2024-05-11 21:53:21.504  INFO 24616 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 21:53:22.177  INFO 24616 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79ba0285
+2024-05-11 21:53:22.187  INFO 24616 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 21:53:22.533  INFO 24616 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44a14de0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50fd739d, org.springframework.security.web.context.SecurityContextHolderFilter@7be3abaa, org.springframework.security.web.header.HeaderWriterFilter@4407b042, org.springframework.security.web.authentication.logout.LogoutFilter@13374ca6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@326706d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@38826984, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5e1d1524, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77a9ac36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1eb6037d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d0a2c82, org.springframework.security.web.access.ExceptionTranslationFilter@3a48c398, org.springframework.security.web.access.intercept.AuthorizationFilter@5f1f0ee6]
+2024-05-11 21:53:22.979  INFO 24616 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:23, dataCenterId:16
+2024-05-11 21:53:23.741  INFO 24616 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 21:53:23.764  INFO 24616 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 6.11 seconds (process running for 6.754)
+2024-05-11 21:53:30.468  INFO 24616 --- [http-nio-8080-exec-1] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-11 21:53:30.468  INFO 24616 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-11 21:53:30.469  INFO 24616 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-11 21:53:44.737 ERROR 24616 --- [http-nio-8080-exec-1] (system) w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Error attempting to get column 'user_role' from result set.  Cause: java.sql.SQLDataException: Cannot convert string 'admin' to java.time.LocalDateTime value
+; Cannot convert string 'admin' to java.time.LocalDateTime value
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:118)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.springframework.dao.DataIntegrityViolationException: Error attempting to get column 'user_role' from result set.  Cause: java.sql.SQLDataException: Cannot convert string 'admin' to java.time.LocalDateTime value
+; Cannot convert string 'admin' to java.time.LocalDateTime value
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:91)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:82)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy72.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:164)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:152)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectList(Unknown Source)
+	at com.baomidou.mybatisplus.core.mapper.BaseMapper.selectOne(BaseMapper.java:222)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$DefaultMethodInvoker.invoke(MybatisMapperProxy.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectOne(Unknown Source)
+	at com.baomidou.mybatisplus.core.mapper.BaseMapper.selectOne(BaseMapper.java:211)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$DefaultMethodInvoker.invoke(MybatisMapperProxy.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectOne(Unknown Source)
+	at org.garcia.monitor.server.config.SecurityConfig.lambda$userDetailsService$0(SecurityConfig.java:53)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:103)
+	... 62 common frames omitted
+Caused by: java.sql.SQLDataException: Cannot convert string 'admin' to java.time.LocalDateTime value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:114)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1431)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1436)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getObject(HikariProxyResultSet.java)
+	at org.apache.ibatis.type.LocalDateTimeTypeHandler.getNullableResult(LocalDateTimeTypeHandler.java:39)
+	at org.apache.ibatis.type.LocalDateTimeTypeHandler.getNullableResult(LocalDateTimeTypeHandler.java:29)
+	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:86)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyColumnOrderBasedConstructorAutomapping(DefaultResultSetHandler.java:789)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyConstructorAutomapping(DefaultResultSetHandler.java:776)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:727)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:689)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:659)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:411)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 81 common frames omitted
+Caused by: com.mysql.cj.exceptions.DataConversionException: Cannot convert string 'admin' to java.time.LocalDateTime value
+	at com.mysql.cj.result.AbstractDateTimeValueFactory.createFromBytes(AbstractDateTimeValueFactory.java:139)
+	at com.mysql.cj.protocol.a.MysqlTextValueDecoder.decodeByteArray(MysqlTextValueDecoder.java:143)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.decodeAndCreateReturnValue(AbstractResultsetRow.java:135)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.getValueFromBytes(AbstractResultsetRow.java:243)
+	at com.mysql.cj.protocol.a.result.ByteArrayRow.getValue(ByteArrayRow.java:91)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getLocalDateTime(ResultSetImpl.java:959)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1391)
+	... 111 common frames omitted
+
+2024-05-11 21:55:38.976  INFO 24616 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 21:55:38.983  INFO 24616 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 22:18:14.571  INFO 25336 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 25336 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 22:18:14.573  INFO 25336 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 22:18:15.193  INFO 25336 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 22:18:15.196  INFO 25336 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 22:18:15.220  INFO 25336 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-05-11 22:18:15.963  INFO 25336 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 22:18:15.974  INFO 25336 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 22:18:15.974  INFO 25336 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 22:18:16.114  INFO 25336 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 22:18:16.114  INFO 25336 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1497 ms
+2024-05-11 22:18:16.598  INFO 25336 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 22:18:16.976  INFO 25336 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e4ac598
+2024-05-11 22:18:16.979  INFO 25336 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 22:18:17.193  INFO 25336 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1dfcf85a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@590dea35, org.springframework.security.web.context.SecurityContextHolderFilter@2d0f548a, org.springframework.security.web.header.HeaderWriterFilter@43fe2008, org.springframework.security.web.authentication.logout.LogoutFilter@5bbf744b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@120d6cbf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5599dc60, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6550ce46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15130002, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@526893f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69f69078, org.springframework.security.web.access.ExceptionTranslationFilter@1dd44289, org.springframework.security.web.access.intercept.AuthorizationFilter@6282f1eb]
+2024-05-11 22:18:17.463  INFO 25336 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:0, dataCenterId:9
+2024-05-11 22:18:17.996  INFO 25336 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 22:18:18.007  INFO 25336 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.877 seconds (process running for 4.396)
+2024-05-11 22:18:44.299  INFO 25336 --- [http-nio-8080-exec-2] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-11 22:18:44.299  INFO 25336 --- [http-nio-8080-exec-2] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-11 22:18:44.299  INFO 25336 --- [http-nio-8080-exec-2] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-11 22:19:00.206 ERROR 25336 --- [http-nio-8080-exec-2] (system) o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.ClassCastException: class org.springframework.security.web.authentication.WebAuthenticationDetails cannot be cast to class org.springframework.security.core.userdetails.User (org.springframework.security.web.authentication.WebAuthenticationDetails and org.springframework.security.core.userdetails.User are in unnamed module of loader 'app')
+	at org.garcia.monitor.server.config.SecurityConfig.onAuthenticationSuccess(SecurityConfig.java:77)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.successfulAuthentication(AbstractAuthenticationProcessingFilter.java:333)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:241)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2024-05-11 22:21:53.958  INFO 25336 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 22:21:53.967  INFO 25336 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 22:21:58.433  INFO 2364 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 2364 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 22:21:58.435  INFO 2364 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 22:21:59.053  INFO 2364 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 22:21:59.056  INFO 2364 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 22:21:59.087  INFO 2364 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-05-11 22:21:59.834  INFO 2364 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 22:21:59.850  INFO 2364 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 22:21:59.851  INFO 2364 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 22:21:59.986  INFO 2364 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 22:21:59.987  INFO 2364 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1514 ms
+2024-05-11 22:22:00.516  INFO 2364 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 22:22:00.845  INFO 2364 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6141647f
+2024-05-11 22:22:00.847  INFO 2364 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 22:22:01.077  INFO 2364 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6106dfb6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14239223, org.springframework.security.web.context.SecurityContextHolderFilter@5599dc60, org.springframework.security.web.header.HeaderWriterFilter@37caecda, org.springframework.security.web.authentication.logout.LogoutFilter@70169464, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bb172dd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1cb849b2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@68df8c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70f5f59d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fdf7da2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c206b14, org.springframework.security.web.access.ExceptionTranslationFilter@526893f, org.springframework.security.web.access.intercept.AuthorizationFilter@46994f26]
+2024-05-11 22:22:01.366  INFO 2364 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:16, dataCenterId:28
+2024-05-11 22:22:01.859  INFO 2364 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 22:22:01.872  INFO 2364 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.85 seconds (process running for 4.346)
+2024-05-11 22:22:04.170  INFO 2364 --- [http-nio-8080-exec-2] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-11 22:22:04.171  INFO 2364 --- [http-nio-8080-exec-2] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-11 22:22:04.172  INFO 2364 --- [http-nio-8080-exec-2] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-11 22:22:34.587  INFO 2364 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 22:22:34.603  INFO 2364 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 22:44:35.219  INFO 19636 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 19636 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 22:44:35.221  INFO 19636 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 22:44:35.857  INFO 19636 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 22:44:35.861  INFO 19636 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 22:44:35.909  INFO 19636 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2024-05-11 22:44:36.588  INFO 19636 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 22:44:36.603  INFO 19636 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 22:44:36.604  INFO 19636 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 22:44:36.733  INFO 19636 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 22:44:36.734  INFO 19636 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1472 ms
+2024-05-11 22:44:37.254  INFO 19636 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 22:44:37.543  INFO 19636 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e4ac598
+2024-05-11 22:44:37.544  INFO 19636 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 22:44:37.753  INFO 19636 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1dfcf85a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@590dea35, org.springframework.security.web.context.SecurityContextHolderFilter@2d0f548a, org.springframework.security.web.header.HeaderWriterFilter@43fe2008, org.springframework.security.web.authentication.logout.LogoutFilter@5bbf744b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@120d6cbf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5599dc60, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6550ce46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15130002, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@526893f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69f69078, org.springframework.security.web.access.ExceptionTranslationFilter@1dd44289, org.springframework.security.web.access.intercept.AuthorizationFilter@6282f1eb]
+2024-05-11 22:44:38.027  INFO 19636 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:18, dataCenterId:13
+2024-05-11 22:44:38.471  INFO 19636 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 22:44:38.477  INFO 19636 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.698 seconds (process running for 4.132)
+2024-05-11 22:44:40.168  INFO 19636 --- [http-nio-8080-exec-1] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-11 22:44:40.168  INFO 19636 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-11 22:44:40.169  INFO 19636 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-11 22:45:41.422  INFO 19636 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 22:45:41.429  INFO 19636 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 22:45:45.886  INFO 22488 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 22488 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 22:45:45.888  INFO 22488 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 22:45:46.496  INFO 22488 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 22:45:46.499  INFO 22488 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 22:45:46.527  INFO 22488 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-05-11 22:45:47.190  INFO 22488 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 22:45:47.204  INFO 22488 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 22:45:47.204  INFO 22488 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 22:45:47.305  INFO 22488 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 22:45:47.306  INFO 22488 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1376 ms
+2024-05-11 22:45:47.866  INFO 22488 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 22:45:48.212  INFO 22488 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34b2d51a
+2024-05-11 22:45:48.215  INFO 22488 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 22:45:48.439  INFO 22488 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64ed18ec, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dfcf85a, org.springframework.security.web.context.SecurityContextHolderFilter@6a543e09, org.springframework.security.web.header.HeaderWriterFilter@6cc56b32, org.springframework.security.web.authentication.logout.LogoutFilter@34eaf9c1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6282f1eb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ab9d160, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@590dea35, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fc3df43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8b89b3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6550ce46, org.springframework.security.web.access.ExceptionTranslationFilter@5d297d4d, org.springframework.security.web.access.intercept.AuthorizationFilter@7853363c]
+2024-05-11 22:45:48.671  INFO 22488 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:20, dataCenterId:27
+2024-05-11 22:45:49.088  INFO 22488 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 22:45:49.095  INFO 22488 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.632 seconds (process running for 4.057)
+2024-05-11 22:45:50.584  INFO 22488 --- [http-nio-8080-exec-1] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-11 22:45:50.584  INFO 22488 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-11 22:45:50.585  INFO 22488 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-11 22:46:16.013  INFO 22488 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 22:46:16.018  INFO 22488 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 23:22:31.217  INFO 24036 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 24036 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 23:22:31.220  INFO 24036 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 23:22:31.825  INFO 24036 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 23:22:31.827  INFO 24036 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 23:22:31.870  INFO 24036 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+2024-05-11 23:22:32.459  INFO 24036 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 23:22:32.469  INFO 24036 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 23:22:32.469  INFO 24036 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 23:22:32.582  INFO 24036 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 23:22:32.583  INFO 24036 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1320 ms
+2024-05-11 23:22:33.074  INFO 24036 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 23:22:33.368  INFO 24036 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e4ac598
+2024-05-11 23:22:33.371  INFO 24036 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 23:22:33.703  INFO 24036 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d95166a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18b3db6e, org.springframework.security.web.context.SecurityContextHolderFilter@30ef32eb, org.springframework.security.web.header.HeaderWriterFilter@774013dc, org.springframework.security.web.authentication.logout.LogoutFilter@5a1c7619, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@199806aa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@174b8d0e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1feb586d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bb5f9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dce5c03, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34695b23, org.springframework.security.web.access.ExceptionTranslationFilter@14d81f2c, org.springframework.security.web.access.intercept.AuthorizationFilter@598e5cb8]
+2024-05-11 23:22:33.797  INFO 24036 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:26, dataCenterId:31
+2024-05-11 23:22:34.257  INFO 24036 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 23:22:34.265  INFO 24036 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.503 seconds (process running for 4.102)
+2024-05-11 23:23:22.055  INFO 24036 --- [http-nio-8080-exec-1] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-11 23:23:22.055  INFO 24036 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-11 23:23:22.057  INFO 24036 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-11 23:25:21.632  INFO 24036 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-11 23:25:21.638  INFO 24036 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-11 23:25:25.459  INFO 7052 --- [main] (system) o.g.monitor.server.ServerApplication     : Starting ServerApplication using Java 17.0.9 with PID 7052 (C:\definition_bymyself\java_code\Monitor\monitor-service\target\classes started by Garcia in C:\definition_bymyself\java_code\Monitor)
+2024-05-11 23:25:25.461  INFO 7052 --- [main] (system) o.g.monitor.server.ServerApplication     : The following 1 profile is active: "dev"
+2024-05-11 23:25:26.079  INFO 7052 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-11 23:25:26.083  INFO 7052 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-11 23:25:26.122  INFO 7052 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2024-05-11 23:25:26.836  INFO 7052 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-11 23:25:26.844  INFO 7052 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-11 23:25:26.845  INFO 7052 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-11 23:25:26.943  INFO 7052 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-11 23:25:26.944  INFO 7052 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1429 ms
+2024-05-11 23:25:27.413  INFO 7052 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-11 23:25:27.699  INFO 7052 --- [main] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f7bb8df
+2024-05-11 23:25:27.702  INFO 7052 --- [main] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-11 23:25:28.088  INFO 7052 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4cadd4d4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7538cfe6, org.springframework.security.web.context.SecurityContextHolderFilter@86377d5, org.springframework.security.web.header.HeaderWriterFilter@71ee2fff, org.springframework.security.web.authentication.logout.LogoutFilter@1214c98b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21d8da75, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@30ef32eb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1f4dd016, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77998ea7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14d81f2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@396f2724, org.springframework.security.web.access.ExceptionTranslationFilter@d978ab9, org.springframework.security.web.access.intercept.AuthorizationFilter@4c28f97e]
+2024-05-11 23:25:28.201  INFO 7052 --- [main] (system) c.c.s.c.s.AbstractWorkIdChooseTemplate   : snowFlake type:common.core.snowflake.core.snowflake.RandomWorkIdChoose, workId:12, dataCenterId:19
+2024-05-11 23:25:28.704  INFO 7052 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-11 23:25:28.711  INFO 7052 --- [main] (system) o.g.monitor.server.ServerApplication     : Started ServerApplication in 3.776 seconds (process running for 4.272)
+2024-05-11 23:25:33.732  INFO 7052 --- [http-nio-8080-exec-1] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-11 23:25:33.733  INFO 7052 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-11 23:25:33.734  INFO 7052 --- [http-nio-8080-exec-1] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

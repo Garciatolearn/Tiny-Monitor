@@ -21,7 +21,7 @@ public class ClientController {
     JWTutils jwTutils;
 
     @GetMapping("register")
-    public Result<Void> registerClient(@RequestHeader("Authentication") String jwt){
+    public Result<Void> registerClient(){
 
         return Results.success();
     }
