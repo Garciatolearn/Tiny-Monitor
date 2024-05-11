@@ -9,6 +9,7 @@ import org.garcia.monitor.server.dao.UserDetailMapper;
 import org.garcia.monitor.server.entity.po.UserDetailPO;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 import oshi.hardware.HardwareAbstractionLayer;
@@ -23,16 +24,18 @@ public class MapperTest {
     @Resource
     UserDetailMapper userDetailMapper;
 
+    @Resource
+    BCryptPasswordEncoder encoder;
+
     @Test
     public void test(){
-//        int insert = userDetailMapper.insert(UserDetailPO.builder()
-//                        .userName("1603393839")
-//                        .alisa("小陈")
-//                        .password("123456")
-//                .build());
-        QueryWrapper<UserDetailPO> objectQueryWrapper = new QueryWrapper<>();
+        int insert = userDetailMapper.insert(UserDetailPO.builder()
+                        .userName("roots")
+                        .alisa("小陈s")
+                        .password(encoder.encode("123456"))
+                        .userRole("admin")
+                .build());
 
-        System.out.println(userDetailMapper.selectOne(objectQueryWrapper.eq("alisa","小陈")));
     }
 
     @Test

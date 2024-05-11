@@ -17,4 +17,6 @@ public class UserDetailPO extends BasePO{
 
     String password;
 
+    String userRole;
+
 }
