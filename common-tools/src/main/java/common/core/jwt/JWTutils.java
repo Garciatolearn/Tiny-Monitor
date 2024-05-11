@@ -80,7 +80,7 @@ public class JWTutils {
      * @return
      * @param <T>
      */
-    public <T> String createToken(T data) {
+    public <T> String createToken(T data,long expiresTime, ChronoUnit unit) {
         Class<?> aClass = data.getClass();
         Field[] declaredFields = aClass.getDeclaredFields();
         Map<String, Object> map = new HashMap<>();
@@ -92,6 +92,14 @@ public class JWTutils {
                 return null;
             }
         }
-        return this.createToken(map);
+        return this.createToken(map,expiresTime,unit);
+    }
+
+    public <T> String createToken(T data,long expiresTime){
+        return this.createToken(data,expiresTime, jwtConfig.getTimeUnit());
+    }
+
+    public <T> String createToken(T data){
+        return this.createToken(data,jwtConfig.getTime());
     }
 }

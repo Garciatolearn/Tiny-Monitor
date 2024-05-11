@@ -10,6 +10,8 @@ public final class Results {
         return new Result<Void>().setCode(Result.SUCCESS_CODE);
     }
 
+    public static Result<Void> success(String message){return new Result<Void>().setCode(Result.SUCCESS_CODE).setMessage(message);}
+
     public static Result<Void> failure(){
         return new Result<Void>().setCode(Result.ERROR_CODE)
                 .setMessage("出现未知异常");
