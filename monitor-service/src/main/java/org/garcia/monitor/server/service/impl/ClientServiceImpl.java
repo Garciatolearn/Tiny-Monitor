@@ -1,5 +1,6 @@
 package org.garcia.monitor.server.service.impl;
 
+import cn.hutool.core.collection.ConcurrentHashSet;
 import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.benmanes.caffeine.cache.Cache;
@@ -13,11 +14,15 @@ import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
 import java.util.List;
+import java.util.Set;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 @Service
 public class ClientServiceImpl extends ServiceImpl<ClientMapper, ClientPO> implements ClientService {
 
     String registerToken = this.generateNewToken();
+
+    Set<String> registerTokens = new ConcurrentSkipListSet<>();
 
     Cache<Integer,ClientPO> sequenceCache = Caffeine.newBuilder().maximumSize(10_000)
             .build(key -> this.getOne(query().eq("client_sequence",key)));
@@ -26,14 +31,15 @@ public class ClientServiceImpl extends ServiceImpl<ClientMapper, ClientPO> imple
 
     @Override
     public boolean verifyRegisterToken(@NotNull String token) {
-        if(token.equals(registerToken)){
+        //保证多个主机同时注册时的并发安全
+        if(registerTokens.contains(token)){
             //todo 修改成唯一id
             int clientSequence = RandomUtil.randomInt(1_0000_0000,10_0000_0001);
             ClientPO clientPO = new ClientPO("未命名主机",token,clientSequence);
             if (this.save(clientPO)){
                 sequenceCache.put(clientSequence,clientPO);
                 registerCache.put(registerToken,clientPO);
-                registerToken = this.generateNewToken();
+                registerTokens.remove(token);
                 return true;
             }
         }

@@ -17,6 +17,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/common-tools/pom.xml" />
         <option value="$PROJECT_DIR$/dependencies/pom.xml" />
       </set>
     </option>
