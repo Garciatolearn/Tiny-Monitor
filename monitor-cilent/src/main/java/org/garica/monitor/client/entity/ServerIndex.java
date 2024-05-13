@@ -30,6 +30,7 @@ public class ServerIndex {
             log.error("错误的registerToken: {}", registerToken);
             return false;
         }
+        log.info("配置读取成功,进行连接尝试.....: ipv4: {} ; token: {}",ipv4,registerToken);
         return true;
     }
 
