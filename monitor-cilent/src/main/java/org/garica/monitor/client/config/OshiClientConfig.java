@@ -32,7 +32,7 @@ public class OshiClientConfig {
             this.loadingProperties();
             this.saveProperties();
         }
-        else if (serverIndex.validate()) {
+        if (serverIndex.validate()) {
             if(this.connectServer()) {
                 scheduler.scheduleWithFixedDelay(updateRunTime(), Duration.ofSeconds(3));
             } else{
