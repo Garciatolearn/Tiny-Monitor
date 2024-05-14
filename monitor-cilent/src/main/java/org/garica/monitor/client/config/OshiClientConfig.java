@@ -5,15 +5,16 @@ import common.core.json.JsonUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.garica.monitor.client.entity.ServerIndex;
-import org.springframework.beans.BeanUtils;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
-import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 
 import java.io.*;
+import java.time.Duration;
 import java.util.Optional;
+import java.util.concurrent.ScheduledFuture;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -23,6 +24,7 @@ public class OshiClientConfig {
     private final ConfigurableApplicationContext applicationContext;
     private final ServerIndex serverIndex;
     private final JsonUtils jsonUtils;
+    private final ThreadPoolTaskScheduler scheduler;
 
     @EventListener(ApplicationReadyEvent.class)
     public void configOshi() {
@@ -31,7 +33,12 @@ public class OshiClientConfig {
             this.saveProperties();
         }
         else if (serverIndex.validate()) {
-            this.connectServer();
+            if(this.connectServer()) {
+                scheduler.scheduleWithFixedDelay(updateRunTime(), Duration.ofSeconds(3));
+            } else{
+                log.error("连接失败");
+                applicationContext.close();
+            }
         } else {
             log.error("config/config.json不存在或其中参数错误");
             applicationContext.close();
@@ -70,13 +77,16 @@ public class OshiClientConfig {
         }
     }
 
-//    @Scheduled(cron = "*/3 * * * * *")
-//    public void updateRunTime(){
-//        System.out.println("正在连接中....");
-//    }
+    public Runnable updateRunTime() {
+        return () -> {
+            log.info("正在连接中....");
+        };
+    }
 
-    private void connectServer(){
+
+    private boolean connectServer(){
         log.info("正在连接中......");
+        return true;
     }
 
 }

@@ -1,21 +1,21 @@
 package org.garica.monitor.client;
 
-import common.core.oshi.OshiUtils;
-import org.garica.monitor.client.entity.ServerIndex;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.event.EventListener;
-import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 
-import java.io.File;
-
-@EnableScheduling
+/**
+ * @author Garcia
+ */
 @SpringBootApplication
 public class ClientApplication {
     public static void main(String[] args) {
         SpringApplication.run(ClientApplication.class, args);
+    }
+
+    @Bean
+    public ThreadPoolTaskScheduler threadPoolTaskScheduler(){
+        return new ThreadPoolTaskScheduler();
     }
 }
