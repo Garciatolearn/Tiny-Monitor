@@ -26,26 +26,31 @@ public class NetUtils {
 
     final static String DOMAIN_PATH = "/monitor-client/";
 
+    final static String PORT_SERVER = "8080";
+
     HttpClient client = HttpClient.newHttpClient();
 
     @Resource
     @Lazy
     ServerIndex index;
 
-    public void get(String url){
+    private HttpResponse<String> get(String url) throws IOException, URISyntaxException, InterruptedException {
+        return get(url,null);
+    }
 
+    private HttpResponse<String> get(String url,String... headers) throws IOException, InterruptedException,
+            URISyntaxException {
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(new URI(PROTOCOL+index.getIpv4()+PORT_SERVER+DOMAIN_PATH+url))
+                .GET()
+                .headers(headers)
+                .build();
+        return client.send(request, HttpResponse.BodyHandlers.ofString());
     }
 
     public Result<HttpResponse> toVerifyRegisterToken(){
         try {
-            HttpRequest request = HttpRequest.newBuilder()
-                    .GET()
-                    //todo 优化常量抽取到配置???
-                    .uri(new URI(PROTOCOL+index.getIpv4()+":8080"+ DOMAIN_PATH + "register"))
-                    .header("register_message", index.getRegisterToken())
-                    .build();
-            HttpResponse<String> send = client.send
-                    (request, HttpResponse.BodyHandlers.ofString());
+            HttpResponse<String> send = get("register","register_message",index.getRegisterToken());
             return Results.success(send,"获取到连接结果",Result.NET_SUCCESS_CODE);
         }
         catch (Exception e) {
