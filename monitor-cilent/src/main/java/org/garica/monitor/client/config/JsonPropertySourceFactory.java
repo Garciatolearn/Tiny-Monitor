@@ -1,9 +1,7 @@
 package org.garica.monitor.client.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.jna.platform.win32.COM.util.annotation.ComMethod;
 import org.springframework.core.env.MapPropertySource;
-import org.springframework.core.env.PropertiesPropertySource;
 import org.springframework.core.env.PropertySource;
 import org.springframework.core.io.support.EncodedResource;
 import org.springframework.core.io.support.PropertySourceFactory;

@@ -10,6 +10,7 @@ import org.garcia.monitor.server.entity.Results;
 import org.garcia.monitor.server.entity.po.UserPO;
 import org.garcia.monitor.server.entity.resp.AccountVO;
 import org.garcia.monitor.server.enums.UserRole;
+import org.garcia.monitor.server.filter.AuthenticationFilter;
 import org.garcia.monitor.server.service.UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,6 +23,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -37,6 +40,9 @@ public class SecurityConfig {
 
     @Resource
     UserService userService;
+
+    @Resource
+    AuthenticationFilter authenticationFilter;
 
     @Bean
     public PasswordEncoder bcryptPasswordEncoder() {
@@ -58,9 +64,12 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests
-                        (conf -> conf.requestMatchers("/monitor-client/register")
-                                .hasAnyRole(UserRole.USER)
-                                .anyRequest().hasAnyRole(UserRole.ADMIN, UserRole.USER)
+                        (conf -> conf.requestMatchers("/terminal/**").permitAll()
+                                .requestMatchers("/api/auth/**", "/error").permitAll()
+                                .requestMatchers("/monitor-client/**").permitAll()
+                                .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
+                                .requestMatchers("/api/user/sub/**").hasRole(UserRole.ADMIN)
+                                .anyRequest().hasAnyRole(UserRole.USER,UserRole.ADMIN)
                         )
                 .formLogin(login -> login.loginProcessingUrl("/api/auth/login")
                         .successHandler(this::onAuthenticationSuccess)
@@ -79,9 +88,10 @@ public class SecurityConfig {
                     response.setContentType("application/json;charset=utf-8");
                     PrintWriter writer = response.getWriter();
                     writer.write(jsonUtils.toJson(Results.failure(authException.getMessage()
-                            , "未登录,无法访问")));
+                            , "未登录,无法访问")))
+                    ;
                 })))
-
+                .addFilterBefore(authenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
 
@@ -94,7 +104,7 @@ public class SecurityConfig {
                 .findUserByUsernameOrEmail(details.getUsername());
 
         AccountVO accountVO = new AccountVO(userByUsernameOrEmail.getUserName(),
-                userByUsernameOrEmail.getId());
+                userByUsernameOrEmail.getId(),userByUsernameOrEmail.getUserRole());
         writer.write(jsonUtils.toJson(Results.success(jwTutils.createToken(accountVO), "登录成功")));
     }
 

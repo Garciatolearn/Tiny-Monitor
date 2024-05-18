@@ -46,6 +46,14 @@ public class ClientServiceImpl extends ServiceImpl<ClientMapper, ClientPO> imple
         return false;
     }
 
+    @Override
+    public String createRegisterToken() {
+        String result = this.registerToken;
+        registerToken = this.generateNewToken();
+        registerTokens.add(result);
+        return result;
+    }
+
     @PostConstruct
     public void initCache(){
         sequenceCache.invalidateAll();

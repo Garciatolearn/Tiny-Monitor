@@ -7,6 +7,6 @@ public interface ClientService extends IService<ClientPO> {
 
     boolean verifyRegisterToken(String token);
 
-
+    String createRegisterToken();
 
 }
