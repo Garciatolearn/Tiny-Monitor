@@ -26,7 +26,7 @@ public class NetUtils {
 
     final static String DOMAIN_PATH = "/monitor-client/";
 
-    final static String PORT_SERVER = "8080";
+    final static String PORT_SERVER = ":8080";
 
     HttpClient client = HttpClient.newHttpClient();
 
@@ -41,7 +41,8 @@ public class NetUtils {
     private HttpResponse<String> get(String url,String... headers) throws IOException, InterruptedException,
             URISyntaxException {
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(new URI(PROTOCOL+index.getIpv4()+PORT_SERVER+DOMAIN_PATH+url))
+//                .uri(new URI(PROTOCOL+index.getIpv4()+PORT_SERVER+DOMAIN_PATH+url))
+                .uri(new URI(PROTOCOL+index.getIpv4()+PORT_SERVER+DOMAIN_PATH+"register"))
                 .GET()
                 .headers(headers)
                 .build();

@@ -7,6 +7,7 @@ import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import jakarta.annotation.PostConstruct;
 import jakarta.validation.constraints.NotNull;
+import lombok.extern.slf4j.Slf4j;
 import org.garcia.monitor.server.dao.ClientMapper;
 import org.garcia.monitor.server.entity.po.ClientPO;
 import org.garcia.monitor.server.service.ClientService;
@@ -18,6 +19,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentSkipListSet;
 
 @Service
+@Slf4j
 public class ClientServiceImpl extends ServiceImpl<ClientMapper, ClientPO> implements ClientService {
 
     String registerToken = this.generateNewToken();
@@ -43,6 +45,7 @@ public class ClientServiceImpl extends ServiceImpl<ClientMapper, ClientPO> imple
                 return true;
             }
         }
+        log.error("注册失败,并没有 \"{}\" 该注册码",token);
         return false;
     }
 
