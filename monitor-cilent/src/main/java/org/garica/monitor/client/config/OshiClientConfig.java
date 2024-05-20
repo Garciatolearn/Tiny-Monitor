@@ -3,6 +3,9 @@ package org.garica.monitor.client.config;
 import cn.hutool.core.bean.BeanUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import common.core.json.JsonUtils;
+import common.core.oshi.OshiUtils;
+import common.core.oshi.entity.ComputerDetail;
+import common.core.oshi.entity.RuntimeDetail;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.garica.monitor.client.entity.Result;
@@ -31,6 +34,8 @@ public class OshiClientConfig {
     private final JsonUtils jsonUtils;
     private final ThreadPoolTaskScheduler scheduler;
     private final NetUtils netUtils;
+    private final OshiUtils oshiUtils;
+
     @EventListener(ApplicationReadyEvent.class)
     public void configOshi() {
         if (BeanUtil.isEmpty(serverIndex)){
@@ -85,7 +90,8 @@ public class OshiClientConfig {
 
     public Runnable updateRunTime() {
         return () -> {
-            log.info("正在连接中....");
+            RuntimeDetail runtimeDetail = oshiUtils.getRuntimeDetail();
+            System.out.println(runtimeDetail);
         };
     }
 

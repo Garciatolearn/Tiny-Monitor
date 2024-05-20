@@ -2,10 +2,13 @@ package org.garcia.monitor.server.service.impl;
 
 import cn.hutool.core.collection.ConcurrentHashSet;
 import cn.hutool.core.util.RandomUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
+import com.github.benmanes.caffeine.cache.LoadingCache;
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import jakarta.validation.constraints.NotNull;
 import lombok.extern.slf4j.Slf4j;
 import org.garcia.monitor.server.dao.ClientMapper;
@@ -26,10 +29,13 @@ public class ClientServiceImpl extends ServiceImpl<ClientMapper, ClientPO> imple
 
     Set<String> registerTokens = new ConcurrentSkipListSet<>();
 
-    Cache<Integer,ClientPO> sequenceCache = Caffeine.newBuilder().maximumSize(10_000)
-            .build(key -> this.getOne(query().eq("client_sequence",key)));
-    Cache<String,ClientPO> registerCache = Caffeine.newBuilder().maximumSize(10_000)
-            .build(key -> this.getOne(query().eq("register_token",key)));
+    LambdaQueryWrapper<ClientPO> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+
+
+    LoadingCache<Integer,ClientPO> sequenceCache = Caffeine.newBuilder().maximumSize(10_000)
+            .build(key -> this.getOne(lambdaQueryWrapper.eq(ClientPO::getClientSequence,key)));
+    LoadingCache<String,ClientPO> registerCache = Caffeine.newBuilder().maximumSize(10_000)
+            .build(key -> this.getOne(lambdaQueryWrapper.eq(ClientPO::getRegisterToken,key)));
 
     @Override
     public boolean verifyRegisterToken(@NotNull String token) {
@@ -44,6 +50,8 @@ public class ClientServiceImpl extends ServiceImpl<ClientMapper, ClientPO> imple
                 registerTokens.remove(token);
                 return true;
             }
+        } else if (registerCache.get(token) != null){
+            return true;
         }
         log.error("注册失败,并没有 \"{}\" 该注册码",token);
         return false;
@@ -61,7 +69,10 @@ public class ClientServiceImpl extends ServiceImpl<ClientMapper, ClientPO> imple
     public void initCache(){
         sequenceCache.invalidateAll();
         registerCache.invalidateAll();
-        this.list().forEach(this::addSequenceCache);
+        this.list().forEach(each -> {
+            this.addSequenceCache(each);
+//            this.addRegisterCache(each);
+        });
     }
 
     private String generateNewToken() {
@@ -77,4 +88,7 @@ public class ClientServiceImpl extends ServiceImpl<ClientMapper, ClientPO> imple
         sequenceCache.put(entity.getClientSequence(),entity);
     }
 
+    private void addRegisterCache(ClientPO entity){
+        registerCache.put(entity.getRegisterToken(),entity);
+    }
 }
